@@ -1,0 +1,12 @@
+{
+  "name": "Aurora — AI To-Do",
+  "short_name": "Aurora",
+  "description": "AI-powered productivity: tasks, calendar, kanban, habits, focus.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#3b63f5",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

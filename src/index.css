@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --accent: #3b63f5;
+    color-scheme: light dark;
+  }
+  html { font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+  body { @apply bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 antialiased min-h-screen; }
+  .amoled body { @apply bg-black; }
+  * { box-sizing: border-box; }
+}
+
+@layer components {
+  .card { @apply rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-soft; }
+  .btn { @apply inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition; }
+  .btn-primary { @apply btn bg-brand-500 text-white hover:bg-brand-600; }
+  .btn-ghost { @apply btn hover:bg-slate-100 dark:hover:bg-slate-800; }
+  .btn-outline { @apply btn border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800; }
+  .input { @apply w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-brand-500; }
+  .chip { @apply inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium; }
+}
